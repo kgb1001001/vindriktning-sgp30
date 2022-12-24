@@ -1,4 +1,4 @@
-Homebridge MQTT-Thing and MQTT
+# Homebridge MQTT-Thing and MQTT
 
 The original VINDRIKTNING project has the ESP8266 send its PM25 readings out via MQTT. MQTT used to stand for MQ Telemetry Transport (although now it's just an acryonym without meaning) and was originally invented by my old friend and IBM colleague Dr. Andy Stanford-Clark. What has happened over the last few years is that MQTT, which is a very lightweight messaging protocol, has become one of the defacto standards for Internet of Things devices.
 
@@ -14,4 +14,4 @@ In that screen, select your wifi network, enter the WPA password, and then below
 
 Now, before you move on it's probably good to check to see if communication with the broker is actually happening. You can use Mosquitto's built in command line tools to check for this, but actually I prefer using Thomas Nordquist's awesome [MQTT Explorer](http://mqtt-explorer.com/) client instead.  You run it on another PC, connect to the Mosquitto server on the Raspberry Pi, and can monitor all of the messages arriving on the various topics.
 
-The VINDRIKTHING project originally assumed that you would be using the HomeAssistant project, which includes integration with MQTT for many devices.  As such, it defines a number of topics that would be automatically picked up by the software.  In my example, where I am instead going to use Homebridge, I just need to note down those topics for use later. 
+The VINDRIKTHING project originally assumed that you would be using the HomeAssistant project, which includes integration with MQTT for many devices.  As such, it defines a number of topics that would be automatically picked up by the software.  In my example, where we are instead going to use Homebridge, you just need to note down those topics for use later. 
