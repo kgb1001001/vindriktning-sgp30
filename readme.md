@@ -12,7 +12,7 @@ The problem with the Awair Element is that the thing costs $300.  I really didn'
 
 That's the combination I was looking for!  And what's more, the total price of less than $50USD for all the parts fit my budget.  With a little research, I figured out that the two sensors could theoretically work together, since the original VINDRIKTNING hack used only one UART pin on the 8266 board, and the SGP30 used SCL/SDA instead (which are only two pins).  
 
-I had to change things around a bit since the original hack used one of the two pins that are needed for SCA/SDL. In the end that led me to the circuit below.  
+I had to change things around a bit since the original hack used one of the two pins that are needed for SDA/SCL. In the end that led me to the circuit below.  
 
 ![ESP3866 with SGP30](VINDRIKTINING_bb.jpg)
 
