@@ -31,3 +31,25 @@ Once I started in on the modifications, I immediately felt bad - the original co
 The project as it is now will automatically function with the [HomeAssistant](https://www.home-assistant.io/) open-source home automation ecosystem.
 
 One additional feature I had to add ties into the next part of this project - enabling this for Apple's Homekit.  I already use the wonderful open source [Homebridge](https://homebridge.io/) project to tie together all of my various Internet of Things bits in my house together.  It is, for instance, WAY better at managing the Wemo switches and outlets that I have than the Wemo application.  What I found is that there is a plugin for Homebridge that allows you to connect devices that communicate via MQTT to Homekit - that is the [MQTT-Thing plugin](https://github.com/arachnetech/homebridge-mqttthing) from David Miller.  [This page](homebridge-config.md) shows you the configuration to make that work.
+
+# Software
+
+Using this software is pretty straightforward, almost all of the build instructions can be found on the original project.  To repeat a bit of that here, with a few important changes.
+
+1. Download the latest Arduino IDE and add the following libraries using the Library Manager
+
+  
+    - ArduinoOTA 1.0.3
+    - ArduinoJSON 6.10.1
+    - PubSubClient 2.8.0
+    - WiFiManager 0.15.0
+    - Adafruit SGP30 Sensor 2.0.0
+    
+2. Open the Preferences window in the Arduino IDE.  Navigate to the Additional Boards Manager URLs field. Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json (You can add multiple URLs, separating them with commas.).  Quit the Arduino IDE and reopen it.
+
+4. Open the Boards Manager and install "esp8266 by ESP8266 Community".  Select the NodeMCU 1.0 version.
+    
+3. Clone this repository and Open the esp8266-vindriktning-particle-sensor-sgp30.ino file in the Arduino IDE.  Ensure that you do NOT have the USB Cable plugged into the Vindriktning.  Instead, plug the USB cable into the D2 so that you can upload the Arduino sketch.  After plugging in the USB cable, choose the USB port for your board and upload the sketch.
+
+4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKNING case. 
+
