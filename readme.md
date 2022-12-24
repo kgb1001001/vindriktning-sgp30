@@ -49,7 +49,7 @@ Using this software is pretty straightforward, almost all of the build instructi
 
 4. Open the Boards Manager and install "esp8266 by ESP8266 Community".  Select the NodeMCU 1.0 version.
     
-3. Clone this repository and Open the esp8266-vindriktning-particle-sensor-sgp30.ino file in the Arduino IDE.  Ensure that you do NOT have the USB Cable plugged into the Vindriktning.  Instead, plug the USB cable into the D2 so that you can upload the Arduino sketch.  After plugging in the USB cable, choose the USB port for your board and upload the sketch.
+3. Clone this repository and Open the esp8266-vindriktning-particle-sensor-sgp30.ino file in the Arduino IDE.  Ensure that you do NOT have the USB Cable plugged into the Vindriktning.  Instead, plug the USB cable into the D1 Mini so that you can upload the Arduino sketch.  After plugging in the USB cable, choose the USB port for your board and upload the sketch.
 
 4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKNING case. 
 
