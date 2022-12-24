@@ -20,7 +20,7 @@ In the end that led me to the circuit below.
 
 Once I figured out the circuit and the pinouts, I had to slightly modify the original C++ code in the VINDRIKTNING project in a couple of ways:
 
-1. I had to change the original UART pinout numbers to match the GPIO numbers of the pins used in the new circuit.  The pinouts of the D1 Mini are below:
+1. I had to change the original UART pinout number to match the GPIO number of the pin used in the new circuit (GPIO 13).  The pinouts of the D1 Mini are below:
 
 ![D1 Mini Pinouts](ESP8266-12E-Wemos-D1-Mini-pinout.jpg)
 
