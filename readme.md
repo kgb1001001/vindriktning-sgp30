@@ -51,5 +51,5 @@ Using this software is pretty straightforward, almost all of the build instructi
     
 3. Clone this repository and Open the esp8266-vindriktning-particle-sensor-sgp30.ino file in the Arduino IDE.  Ensure that you do NOT have the USB Cable plugged into the Vindriktning.  Instead, plug the USB cable into the D1 Mini so that you can upload the Arduino sketch.  After plugging in the USB cable, choose the USB port for your board and upload the sketch.
 
-4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKNING case. 
+4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKNING case. After it's reassembled, then plug the USB cable into the VINDRIKTNING and watch for the air sensor LED's to cycle through and finally settle on Green or yellow (Depending upon the air quality in the room you are in).  At this point, you can move on to configuration of the Wifi and MQTT.
 
