@@ -23,10 +23,10 @@ The first thing you have to do after setting up Mosquitto is to then install the
   
 You will also have to select an accessory type and give it a name.  Select "airQualitySensor" and name it anything you like (I used "Vindriktning-SGP30").  The most complex part of this is setting up the topics for the Air Quality Sensor accessory.  There are four that you need to configure, "Get Air Quality", "Get Carbon Dioxide Level", "Get PM2_5 Density" and "Get VOC Density".  In each case, you need the exact topic names that were set up by Ardunio software - which use the name of the particular sensor as the second part of the topic name.  This is why we recommended you first check the connection with MQTTExplorer - this will give you the exact topic names.  Assuming you did not modify the software, there should be  six-digit id code that will be the same across all topics that you can substitute below for YYYYY.
   
-The final part of the string you will need to enter is the particular JSON element on the topic that each element matches too.  You can also see this with MQTTExplorer. 
+The final part of the string you will need to enter is the particular JSON element on the topic that each element matches to.  You can also see this with MQTTExplorer. For more information on the structure of the MQTT-Thing JSON parsing mechanism, see the link above.
   
-  - "getAirQuality" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.quality",
-  = "getCarbonDioxideLevel" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.eCO2",
-  - "getPM2_5Density" use the string : "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.pm25",
+  - "getAirQuality" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.quality"
+  - "getCarbonDioxideLevel" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.eCO2"
+  - "getPM2_5Density" use the string : "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.pm25"
   - "getVOCDensity" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.tVOC"
 
