@@ -16,6 +16,8 @@ I had to change things around a bit since the original hack used one of the two 
 
 ![ESP3866 with SGP30](VINDRIKTINING_bb.jpg)
 
+I'll not walk you through the detailed soldering instructions the way that the original project did - I'm guessing if you're getting this far you can figure out how to extend the instructions they gave you to add soldering the additional pins to wire in the SGP30.
+
 Once I figured out the circuit and the pinouts, I had to slightly modify the original C++ code in the VINDRIKTNING project in a couple of ways:
 
 1. I had to change the original UART pinout number to match the GPIO number of the pin used in the new circuit (GPIO 13, or D7).  As mentioned above the original hack had used D2 for the UART connection to the VINDRIKTINING but I needed D2 because it's also the predefined SDA pin.   The pinouts of the D1 Mini are below:
