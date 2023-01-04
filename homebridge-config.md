@@ -30,3 +30,4 @@ The final part of the string you will need to enter is the particular JSON eleme
   - "getPM2_5Density" use the string : "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.pm25"
   - "getVOCDensity" use the string: "esp8266-vindriktning-particle-sensor/VINDRIKTNING-YYYYYY/state$.tVOC"
 
+Once you put this in place, the ESP2866 should then start reporting through the MQTT-Thing bridge into Homebridge.  One thing I have found is that the VINDRIKTNING sensor will not show up in Apple Home but will show up in other Apple Homekit viewers such as the [Eve](https://apps.apple.com/us/app/eve-for-homekit/id917695792) application.  
