@@ -20,7 +20,7 @@ I'll not walk you through the detailed soldering instructions the way that the o
 
 Once I figured out the circuit and the pinouts, I had to slightly modify the original C++ code in the VINDRIKTNING project in a couple of ways:
 
-1. I had to change the original UART pinout number to match the GPIO number of the pin used in the new circuit (GPIO 13, or D7).  As mentioned above the original hack had used D2 for the UART connection to the VINDRIKTINING but I needed D2 because it's also the predefined SDA pin.   The pinouts of the D1 Mini are below:
+1. I had to change the original UART pinout number to match the GPIO number of the pin used in the new circuit (GPIO 13, or D7).  As mentioned above the original hack had used D2 for the UART connection to the VINDRIKTNING but I needed D2 because it's also the predefined SDA pin.   The pinouts of the D1 Mini are below:
 
 ![D1 Mini Pinouts](ESP8266-12E-Wemos-D1-Mini-pinout.jpg)
 
@@ -51,5 +51,5 @@ Using this software is pretty straightforward, almost all of the build instructi
     
 3. Clone this repository and Open the esp8266-vindriktning-particle-sensor-sgp30.ino file in the Arduino IDE.  Ensure that you do NOT have the USB Cable plugged into the VINDRIKTNING.  Instead, plug the USB cable into the D1 Mini so that you can upload the Arduino sketch.  After plugging in the USB cable, choose the USB port for your board and upload the sketch.
 
-4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKNING case. After it's reassembled, then plug the USB cable into the VINDRIKTNING and watch for the air sensor LED's to cycle through and finally settle on Green or yellow (Depending upon the air quality in the room you are in).  At this point, you can move on to configuration of the Wifi and MQTT.
+4. Unplug the USB cable from the ESP8266 board and then insert the SGP30 and D1 Mini (along with all of the wires) into the VINDRIKTNING case. After it's reassembled, then plug the USB cable into the VINDRIKTNING and watch for the air sensor LED's to cycle through and finally settle on Green or yellow (Depending upon the air quality in the room you are in).  At this point, you can move on to configuration of the Wifi and MQTT.
 
